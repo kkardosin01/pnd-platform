@@ -4,6 +4,7 @@ import { pndBatch2 } from "./pnd-2025-batch2";
 import { concursoAocpIfma } from "./concurso-aocp-ifma";
 import { concursoFgvSmesp } from "./concurso-fgv-smesp";
 import { concursoVunespSantoAndre } from "./concurso-vunesp-santoandre";
+import { concursoTopicosLacuna } from "./concurso-topicos-lacuna";
 
 /**
  * Banco de questões — MVP.
@@ -34,6 +35,12 @@ import { concursoVunespSantoAndre } from "./concurso-vunesp-santoandre";
  * - 20 questões — Concurso Prefeitura de Santo André (Edital nº 01/2023,
  *   banca VUNESP, cargo Professor de Educação Infantil e Ensino
  *   Fundamental) em `concurso-vunesp-santoandre.ts`.
+ * - 20 questões avulsas de bancas variadas (FGV, CEBRASPE, SELECON, FUMARC,
+ *   UFMT, FUNDATEC, Instituto Access, ADM&TEC, IBFC) em
+ *   `concurso-topicos-lacuna.ts`. Ao contrário dos arquivos acima, este é
+ *   agrupado por lacuna de cobertura: reúne questões dos tópicos da taxonomia
+ *   que não tinham nenhuma questão no banco, o que deixava a prática
+ *   inteligente sem material para tópicos prioritários.
  */
 
 const inedita = "Questão inédita criada para treinamento, baseada nas competências e habilidades previstas na matriz de referência.";
@@ -335,6 +342,7 @@ export const questions: Question[] = [
   ...concursoAocpIfma,
   ...concursoFgvSmesp,
   ...concursoVunespSantoAndre,
+  ...concursoTopicosLacuna,
   ...ineditasQuestions,
 ];
 

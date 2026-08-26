@@ -97,7 +97,7 @@ export function SimuladoRunner({ simulation }: { simulation: SimulationRunData |
       </div>
 
       <Card className="p-6">
-        <p className="text-sm leading-relaxed">{question.statement}</p>
+        <p className="whitespace-pre-line text-sm leading-relaxed">{question.statement}</p>
 
         <div className="mt-5 flex flex-col gap-2">
           {question.options.map((option) => {

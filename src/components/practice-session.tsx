@@ -103,7 +103,7 @@ export function PracticeSession({ questions }: { questions: Question[] }) {
           <Badge variant="outline">{originLabels[question.origin]}</Badge>
         </div>
 
-        <p className="text-sm leading-relaxed">{question.statement}</p>
+        <p className="whitespace-pre-line text-sm leading-relaxed">{question.statement}</p>
 
         <div className="mt-5 flex flex-col gap-2">
           {question.options.map((option) => {

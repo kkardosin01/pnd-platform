@@ -81,7 +81,7 @@ export function ErrorNotebook({ attempts }: { attempts: QuestionAttempt[] }) {
               const selectedOption = question.options.find((o) => o.id === attempt.selectedOptionId);
               return (
                 <Card key={question.id} className="p-5">
-                  <p className="text-sm leading-relaxed">{question.statement}</p>
+                  <p className="whitespace-pre-line text-sm leading-relaxed">{question.statement}</p>
 
                   <div className="mt-3 flex flex-col gap-2 text-sm">
                     <div className="flex items-start gap-2 rounded-lg border border-red-200 bg-red-50 p-2.5 dark:border-red-900 dark:bg-red-950/40">

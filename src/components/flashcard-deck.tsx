@@ -85,7 +85,7 @@ export function FlashcardDeck({ questions }: { questions: Question[] }) {
         <Badge variant="outline" className="mx-auto">{getTopicLabel(question.topicId)}</Badge>
 
         {!revealed ? (
-          <p className="text-sm leading-relaxed">{question.statement}</p>
+          <p className="whitespace-pre-line text-sm leading-relaxed">{question.statement}</p>
         ) : (
           <div className="flex flex-col gap-2 text-sm">
             <p className="font-medium">{correctOption?.text}</p>
